@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { ContactFormComponent } from '../../shared/components/elements/contact-form/contact-form.component';
-import { Section } from '../../shared/components/elements/section/section';
-import { EmailLinkComponent } from '../../shared/components/elements/email-link/email-link.component';
-import {NgOptimizedImage} from '@angular/common'; // Import EmailLinkComponent
+import { ContactFormComponent } from '@app/shared/components/elements/contact-form/contact-form.component';
+import { Section } from '@app/shared/components/elements/section/section';
+import { EmailLinkComponent } from '@app/shared/components/elements/email-link/email-link.component';
+import {NgOptimizedImage} from '@angular/common';
 
 @Component({
   selector: 'app-consultation',
@@ -11,7 +11,6 @@ import {NgOptimizedImage} from '@angular/common'; // Import EmailLinkComponent
     Section,
     EmailLinkComponent,
     NgOptimizedImage,
-    // Add EmailLinkComponent
   ],
   templateUrl: './consultation.html',
   styleUrl: './consultation.scss',

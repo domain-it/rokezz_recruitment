@@ -1,9 +1,9 @@
 import {Component, inject} from '@angular/core';
-import { Button } from '../../shared/components/controls/button/button';
-import { Section } from '../../shared/components/elements/section/section';
-import { IconComponent } from '../../shared/components/elements/icon/icon.component';
-import { ImageGalleryComponent } from '../../shared/components/elements/image-gallery/image-gallery.component';
-import {Router} from '@angular/router'; // Import ImageGalleryComponent
+import { Button } from '@app/shared/components/controls/button/button';
+import { Section } from '@app/shared/components/elements/section/section';
+import { IconComponent } from '@app/shared/components/elements/icon/icon.component';
+import { ImageGalleryComponent } from '@app/shared/components/elements/image-gallery/image-gallery.component';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-gallery',
@@ -11,7 +11,7 @@ import {Router} from '@angular/router'; // Import ImageGalleryComponent
     Button,
     Section,
     IconComponent,
-    ImageGalleryComponent, // Add ImageGalleryComponent
+    ImageGalleryComponent,
   ],
   templateUrl: './gallery.html',
   styleUrl: './gallery.scss',

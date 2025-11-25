@@ -10,10 +10,10 @@
 }
 
 button {
-  display: flex; /* Make button a flex container */
-  align-items: center; /* Vertically align items */
-  justify-content: center; /* Horizontally center items */
-  gap: 0.5em; /* Add some space between icon and text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
   font-weight: bold;
   border-radius: 8px;
   padding-block: 0.5rem;
@@ -27,7 +27,7 @@ button {
     background-color: styles.$accent-secondrary-color;
   }
 
-  app-icon { /* Target app-icon inside the button */
+  app-icon {
     width: 1em;
     height: 1em;
   }

@@ -1,9 +1,9 @@
 import { Component, signal } from '@angular/core';
-import { SharedModule } from '../../shared/shared.module';
+import { SharedModule } from '@app/shared/shared.module';
 import { inject } from '@angular/core';
 import { Router } from '@angular/router';
-import { Logo } from '../../shared/components/elements/logo/logo';
-import {IconComponent} from '../../shared/components/elements/icon/icon.component';
+import { Logo } from '@app/shared/components/elements/logo/logo';
+import {IconComponent} from '@app/shared/components/elements/icon/icon.component';
 
 @Component({
   selector: 'app-header',

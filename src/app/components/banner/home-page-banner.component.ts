@@ -1,6 +1,6 @@
 import {Component, inject} from '@angular/core';
 import { NgOptimizedImage } from '@angular/common';
-import {SharedModule} from '../../shared/shared.module';
+import {SharedModule} from '@app/shared/shared.module';
 import {Router} from '@angular/router';
 
 @Component({

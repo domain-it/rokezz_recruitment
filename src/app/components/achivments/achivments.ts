@@ -25,7 +25,7 @@ export class Achivments implements AfterViewInit, OnDestroy {
           }
         });
       },
-      { threshold: 0.5 } // Lowered threshold
+      { threshold: 0.5 }
     );
 
     this.observer.observe(this.el.nativeElement);
@@ -51,7 +51,6 @@ export class Achivments implements AfterViewInit, OnDestroy {
     const step = (timestamp: number) => {
       if (!startTimestamp) startTimestamp = timestamp;
       const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-      // Apply an ease-out cubic function
       const easedProgress = 1 - Math.pow(1 - progress, 3);
       const currentValue = Math.floor(easedProgress * (end - start) + start);
 

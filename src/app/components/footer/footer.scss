@@ -5,17 +5,18 @@
   padding-block: 81px;
   padding-inline: 200px;
   border-top: 1px solid hsla(0,100%,100%,0.1);
+  justify-content: space-between;
 }
 
 :first-child {
   justify-self: start;
 }
 
-:nth-child(2) {
+.sitemap {
   justify-self: center;
 }
 
-:last-child {
+.contact-section {
   justify-self: end;
 }
 
@@ -43,7 +44,7 @@
     padding-inline: 30px;
     & > * {
       justify-self: start;
+      line-height: 2rem;
     }
-    line-height: 2rem;
   }
 }

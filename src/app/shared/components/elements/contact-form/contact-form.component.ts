@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import {
   FormBuilder,
   FormControl,
@@ -12,9 +12,10 @@ import {IconComponent} from '../icon/icon.component';
 @Component({
   selector: 'app-contact-form',
   standalone: true,
-  imports: [ReactiveFormsModule, TextInputComponent, Button, IconComponent], // Add IconComponent to imports
+  imports: [ReactiveFormsModule, TextInputComponent, Button, IconComponent],
   templateUrl: './contact-form.component.html',
   styleUrls: ['./contact-form.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ContactFormComponent {
   private fb = inject(FormBuilder);

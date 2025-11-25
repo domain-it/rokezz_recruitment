@@ -29,7 +29,7 @@ body {
   font: $text-md;
   background-color: $bg-color;
   color: $text-color;
-  padding-top: 80px; /* Default padding for header height on mobile */
+  padding-top: 80px;
 }
 
 img {
@@ -41,7 +41,7 @@ img {
 
 p {
   line-height: 1.5em;
-  margin-block: 1.125rem; /* Standardized paragraph spacing */
+  margin-block: 1.125rem;
 }
 
 a {
@@ -124,7 +124,7 @@ app-section:nth-of-type(odd) {
 
 @media (min-width: 1440px) {
   body {
-    padding-top: 150px; /* Adjust padding for desktop header height */
+    padding-top: 150px;
   }
 }
 

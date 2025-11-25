@@ -27,8 +27,8 @@ import { NgStyle } from '@angular/common';
   ],
 })
 export class CardGridComponent {
-  columns = input<number>(3); // Default to 3 columns
-  gap = input<string>('3rem'); // Default gap
+  columns = input<number>(3);
+  gap = input<string>('3rem');
 
   gridStyle() {
     return {

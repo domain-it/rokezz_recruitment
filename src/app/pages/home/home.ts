@@ -1,11 +1,11 @@
 import {ChangeDetectionStrategy, Component, inject} from '@angular/core';
-import { Achivments } from '../../components/achivments/achivments';
-import { Button } from '../../shared/components/controls/button/button';
-import { ContactFormComponent } from '../../shared/components/elements/contact-form/contact-form.component';
+import { Achivments } from '@app/components/achivments/achivments';
+import { Button } from '@app/shared/components/controls/button/button';
+import { ContactFormComponent } from '@app/shared/components/elements/contact-form/contact-form.component';
 import { NgOptimizedImage } from '@angular/common';
-import { HomePageBanner } from '../../components/banner/home-page-banner.component';
-import { Section } from '../../shared/components/elements/section/section';
-import { EmailLinkComponent } from '../../shared/components/elements/email-link/email-link.component';
+import { HomePageBanner } from '@app/components/banner/home-page-banner.component';
+import { Section } from '@app/shared/components/elements/section/section';
+import { EmailLinkComponent } from '@app/shared/components/elements/email-link/email-link.component';
 import {Router} from '@angular/router';
 
 @Component({
@@ -19,7 +19,7 @@ import {Router} from '@angular/router';
     ContactFormComponent,
     NgOptimizedImage,
     Section,
-    EmailLinkComponent, // Add EmailLinkComponent
+    EmailLinkComponent,
   ],
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,

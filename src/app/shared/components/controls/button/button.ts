@@ -16,6 +16,7 @@ export type ButtonVariant = 'default' | 'secondary' | 'icon';
   host: {
     '(mouseenter)': 'onMouseEnter()',
     '(mouseleave)': 'onMouseLeave()',
+    '[class]': 'class()', // Bind the class input to the host element
   },
 })
 export class Button {
@@ -24,6 +25,7 @@ export class Button {
   tooltip = input<string>('');
   buttonClick = output<void>();
   disabled = input<boolean>(false);
+  class = input<string | undefined>(undefined);
   hovering = signal(false);
 
   onClick() {

@@ -47,8 +47,6 @@
   cursor: pointer;
 }
 
-/* Removed the problematic media query rule that hid .nav on small screens */
-
 @media (min-width: 1440px) {
   :host {
     position: fixed;

@@ -23,12 +23,12 @@
 @media (max-width: 1245px) {
   .section {
     grid-template-columns: 1fr;
-    gap: 2rem; /* Adjust gap for mobile */
-    padding-inline: 30px; /* Mobile padding */
+    gap: 2rem;
+    padding-inline: 30px;
   }
 
   .left-column,
   .right-column {
-    justify-self: stretch; /* Allow columns to stretch full width */
+    justify-self: stretch;
   }
 }

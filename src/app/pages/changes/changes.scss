@@ -18,22 +18,22 @@
       height: auto;
       border-radius: 8px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      transition: transform 0.3s ease-in-out; /* Add transition for smoother effects */
+      transition: transform 0.3s ease-in-out;
 
       &:nth-child(1) {
         transform: rotate(-15deg);
-        margin-right: -50px; /* Overlap effect */
+        margin-right: -50px;
         z-index: 1;
       }
 
       &:nth-child(2) {
         transform: rotate(0deg);
-        z-index: 2; /* Middle image on top */
+        z-index: 2;
       }
 
       &:nth-child(3) {
         transform: rotate(15deg);
-        margin-left: -50px; /* Overlap effect */
+        margin-left: -50px;
         z-index: 1;
       }
     }

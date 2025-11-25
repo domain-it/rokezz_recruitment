@@ -17,12 +17,12 @@ import { IconComponent } from '../icon/icon.component';
         display: inline-flex;
         align-items: center;
         gap: 0.5rem;
-        text-decoration: none; /* Remove default underline */
-        color: inherit; /* Inherit color from parent */
+        text-decoration: none;
+        color: inherit;
       }
 
       .email-link::after {
-        display: none; /* Remove default link underline */
+        display: none;
       }
     `,
   ],
