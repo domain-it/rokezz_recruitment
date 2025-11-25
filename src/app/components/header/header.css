@@ -1,0 +1,42 @@
+@import "https://fonts.googleapis.com/css2?family=Figtree&display=swap";
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font: 16px "Figtree", sans-serif;
+  background-color: hsl(222, 65%, 5%);
+  color: hsl(222, 65%, 95%);
+}
+
+.text-l {
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+:host {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 81px;
+  padding-inline: 200px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background: hsla(222, 65%, 5%, 0.5);
+  backdrop-filter: blur(20px);
+}
+
+.nav {
+  display: flex;
+  gap: 33px;
+}
+
+/*# sourceMappingURL=header.css.map */

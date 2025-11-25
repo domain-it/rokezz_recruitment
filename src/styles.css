@@ -1,0 +1,11 @@
+@import "https://fonts.googleapis.com/css2?family=Figtree&display=swap";
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font: 16px "Figtree", sans-serif;
+}
+
+/*# sourceMappingURL=styles.css.map */

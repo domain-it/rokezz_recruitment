@@ -1,0 +1,31 @@
+@use '../../../styles' as styles;
+
+.contact {
+  background-color: styles.$bg-surface-color;
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
+.map {
+  padding-block: 4rem;
+
+  h2 {
+    font-size: 2.7rem;
+    line-height: 3.5rem;
+    text-transform: uppercase;
+    max-width: 600px
+  }
+  .motto {
+    align-self: flex-end;
+    text-align: end;
+    margin: 0;
+  }
+
+  .accent {
+    color: styles.$accent-main-color;
+  }
+}
+

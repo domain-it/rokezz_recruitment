@@ -1,0 +1,24 @@
+<app-logo/>
+<div class="sitemap">
+  <p class="text-l">Mapa strony</p>
+  <ul>
+    <li><a href="/about-me">O mnie</a></li>
+    <li><a href="/achivments">Osiągnięcia</a></li>
+    <li><a href="/changes">Przemiany</a></li>
+    <li><a href="/gallery">Galeria</a></li>
+    <li><a href="/contact">Kontakt</a></li>
+  </ul>
+</div>
+<div>
+  <p class="text-l">Kontakt</p>
+  <p>Napisz do mnie lub umów się na konsultację</p>
+  <div class="buttons">
+    <span class="mail">
+      <app-icon name="mail"/>
+      <a href="mailto:damiansoltys@trening.com">damiansoltys@trening.com</a>
+    </span>
+    <div class="button-container">
+      <app-button (click)="navigateTo('/consultation')">Umów konsultację</app-button>
+    </div>
+  </div>
+</div>

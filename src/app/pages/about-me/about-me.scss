@@ -1,0 +1,18 @@
+@use '../../../styles' as styles;
+
+.banner {
+  background-color: styles.$bg-surface-color;
+}
+
+.marketing-stuff {
+  background-color: styles.$bg-surface-color;
+
+  h2 {
+    font-weight: 900;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  p {
+    margin-block: 1.125rem;
+  }
+}

@@ -1,0 +1,34 @@
+<app-section class="banner">
+  <div left class="banner-content">
+    <h1 class="x-bold">osiągajmy cele razem</h1>
+    <p>Za każdym wynikiem moich podopiecznych stoją lata doświadczenia, setki godzin szkoleń i konsekwentna praca oparta na rzetelnej wiedzy. Na tej stronie znajdziesz najważniejsze osiągnięcia, które potwierdzają skuteczność mojego podejścia i zaangażowanie w rozwój każdej osoby, z którą współpracuję. Jeśli chcesz sprawdzić, jak mogę pomóc również Tobie — umów się na konsultację i zacznijmy działać.</p>
+    <div class="button-container">
+      <app-button (click)="navigateTo('/consultation')">Umów się na konsultację</app-button>
+    </div>
+  </div>
+  <img right src="/frame7.png" alt="changes"/>
+</app-section>
+<app-section class="personal-achivments ">
+  <div left class="achivment-content">
+     <h2 class="title">Moje osiągnięcia</h2>
+    <p>W ciągu 11 lat mojej kariery zdobyłem wiele tytułów i wyróżnień, zarówno jako sportowiec jak i jako trener. Poniżej kilka z nich, z których jestem najbardziej dumny.
+      Wszystkie moje dotychczasowe osiągnięcia możesz zobaczyć na moim Instagramie.</p>
+    <app-button> <app-icon name="instagram"/> Instagram</app-button>
+  </div>
+  <div right></div>
+</app-section>
+<div class="page-content">
+  <app-card-grid >
+    <app-card title="Trener Roku CityFit" subtitle="2021 & 2022"/>
+    <app-card title="Wyróżnienie EREPS European Register of Exercise Professionals" subtitle="2020"/>
+    <app-card title="PT of the Year – Trener Osobisty Roku" subtitle="2022"/>
+  </app-card-grid>
+</div>
+<app-section class="changes ">
+    <img left src="/frame8.png" alt="changes"/>
+    <div right class="changes-content">
+      <h2 class="title">prawie 500 osób zmieniło swoje życie</h2>
+      <p>Dzięki mojemu doświadczeniu i indywidualnemu podejściu, pomogłem już blisko 500 osobom osiągnąć swoje cele i dokonać pozytywnych zmian - niezależnie, czy celem było zbudowanie mięśni, poprawa kondycji czy zrzucenie zbędnych kilogramów - wspólnie jesteśmy w stanie osiągnąć wszystko! Zobacz efekty moich podopiecznych.</p>
+      <app-button (click)="navigateTo('/changes')" > Przemiany</app-button>
+    </div>
+</app-section>

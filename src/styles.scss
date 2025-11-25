@@ -1,1 +1,135 @@
-/* You can add global styles to this file, and also import other style files */
+@use 'styles/typography';
+
+$bg-color: hsla(222, 65%, 5%, 100%);
+$bg-surface-color: hsl(222,65%,10%);
+$bg-surface-2-color: hsl(222,65%, 15%);
+$accent-main-color: hsl(28, 100%, 50%);
+$accent-secondrary-color: hsl(15,77%,44%);
+$accent-tertiary-color: hsla(0, 100%, 100%, 5%);
+$error-color: hsl(0, 100%, 50%);
+$text-color: hsl(222, 65%, 95%);
+$text-dark: hsl(222, 65%, 90%);
+$text-color-light: hsl(222, 65%, 80%);
+$text-color-disabled: hsla(222, 65%, 80%, 0.5);
+
+
+$font-family: 'Figtree', sans-serif;
+
+$text-massive: 6rem;
+$text-xl: 1.25rem;
+$text-lg: 1.125rem;
+$text-md: 16px $font-family;
+$text-sm: 0.875rem;
+$text-xs: 0.75rem;
+
+html, body {
+  height: 100%;
+}
+body {
+  font: $text-md;
+  background-color: $bg-color;
+  color: $text-color;
+  padding-top: 80px; /* Default padding for header height on mobile */
+}
+
+img {
+  border: 1px solid hsla(0,100%,100%, 0.1);
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+}
+
+p {
+  line-height: 1.5em;
+  margin-block: 1.125rem; /* Standardized paragraph spacing */
+}
+
+a {
+  color: $text-color;
+  position: relative;
+  text-decoration: none;
+  font-weight: bold;
+  line-height: 1.5em;
+  cursor: pointer;
+}
+
+a::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  height: 2px;
+  background-color: $text-color;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+a:hover::after{
+  opacity: 1;
+}
+
+.text-l {
+  font-size: $text-lg;
+  font-weight: bold;
+}
+
+.text-xl {
+  font-size: $text-xl;
+}
+
+.text-sm {
+  font-size: $text-sm;
+}
+
+.text-massive {
+  line-height: 6rem;
+  margin: 0;
+  font-size: $text-massive;
+}
+
+.bold {
+  font-weight: 700;
+}
+.x-bold {
+  font-weight: 900;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.button-container {
+  display: flex;
+  gap: 1rem;
+  margin-top: 3em;
+}
+
+.page-content {
+  padding-inline: 200px;
+}
+
+
+app-section:nth-of-type(odd) {
+  background-color: $bg-surface-color;
+}
+
+@media (max-width: 768px) {
+  .page-content {
+    padding-inline: 20px;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    padding-top: 150px; /* Adjust padding for desktop header height */
+  }
+}
+
+@media (max-width: 520px) {
+  .button-container {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,50 @@
+@import "https://fonts.googleapis.com/css2?family=Figtree&display=swap";
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font: 16px "Figtree", sans-serif;
+  background-color: hsl(222, 65%, 5%);
+  color: hsl(222, 65%, 95%);
+}
+
+.text-l {
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+button {
+  font-weight: bold;
+  border-radius: 8px;
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
+  border: 1px solid hsla(0, 100%, 100%, 0.05);
+  transition: background-color 0.3s ease-in-out;
+}
+button:hover {
+  background-color: hsl(15, 77%, 44%);
+}
+
+.default {
+  background-color: hsl(28, 100%, 50%);
+  color: hsl(222, 65%, 95%);
+}
+
+.secondary {
+  background-color: hsla(0, 100%, 100%, 0.05);
+  color: hsl(222, 65%, 95%);
+}
+
+.icon {
+  background-color: hsl(28, 100%, 50%);
+  color: hsl(222, 65%, 95%);
+  border-radius: 1000rem;
+}
+
+/*# sourceMappingURL=button.css.map */

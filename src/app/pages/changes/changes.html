@@ -1,0 +1,40 @@
+<app-section class="banner section">
+  <div left class="banner-content">
+    <h1 class="x-bold">oni już osiągnęli swoje cele</h1>
+    <p>Każdy sukces moich podopiecznych to też mój sukces, dlatego do każdej osoby podchodzę indywidualnie i dopasowuję
+      plan treningowy do jej potrzeb, możliwości i oczekiwań. Zobacz przykłady niezwykłch przemian, nad którymi razem
+      pracowaliśmy - a jeśli chcesz rozpocząć swoją, napisz do mnie!</p>
+    <div class="button-container">
+      <app-button (click)="navigateTo('/consultation')">Umów się na konsultację</app-button>
+    </div>
+  </div>
+  <img right ngSrc="/trener-front.png" alt="Banner Image" height="487" width="622"/>
+</app-section>
+<div class="page-content">
+  <app-image-gallery >
+    <img ngSrc="/frame8.png" alt="Banner Image" height="487" width="622"/>
+    <img ngSrc="/frame8.png" alt="Banner Image" height="487" width="622"/>
+    <img ngSrc="/frame8.png" alt="Banner Image" height="487" width="622"/>
+    <img ngSrc="/frame8.png" alt="Banner Image" height="487" width="622"/>
+    <img ngSrc="/frame8.png" alt="Banner Image" height="487" width="622"/>
+    <img ngSrc="/frame8.png" alt="Banner Image" height="487" width="622"/>
+    <img ngSrc="/frame8.png" alt="Banner Image" height="487" width="622"/>
+    <img ngSrc="/frame8.png" alt="Banner Image" height="487" width="622"/>
+    <img ngSrc="/frame8.png" alt="Banner Image" height="487" width="622"/>
+  </app-image-gallery>
+</div>
+  <app-section class="social-media">
+    <div left class="social-media-content">
+      <h2>Chcesz zobaczyć więcej?</h2>
+      <p>Zapraszam na mojego Instagrama, gdzie na bieżąco udostępniam zdjęcia tych podopiecznych, którzy chętnie dzielą
+        się efektami swojej podróży. Znajdziesz tam też ich odczucia i opinie, porady treningowe i wiele więcej!</p>
+      <div class="button-container">
+        <app-button><app-icon name="instagram"/>Instagram</app-button>
+      </div>
+    </div>
+    <div right class="instagram-images center">
+      <img ngSrc="/frame1.png" alt="Banner Image" height="346" width="365"/>
+      <img ngSrc="/frame3.png" alt="Banner Image" height="346" width="365"/>
+      <img ngSrc="/frame2.png" alt="Banner Image" height="346" width="365"/>
+    </div>
+  </app-section>

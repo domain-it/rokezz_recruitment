@@ -1,0 +1,14 @@
+<div class="button">
+  <button
+    [class]="variant()"
+    [class.disabled]="disabled()"
+    [class.active]="active()"
+    [disabled]="disabled()"
+    (click)="onClick()"
+  >
+    <ng-content></ng-content>
+  </button>
+  @if (disabled() && tooltip() && hovering()) {
+  <span class="tooltip">{{ tooltip() }}</span>
+  }
+</div>

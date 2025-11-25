@@ -1,0 +1,24 @@
+@use "../../../styles" as styles;
+
+:host {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: baseline;
+  justify-items: center;
+  padding-block: 70px;
+  gap: 4rem;
+
+  & > * {
+    align-self: center;
+    text-align: center;
+    width: 15.625rem;
+  }
+}
+
+@media (max-width: 1214px) {
+  :host {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+

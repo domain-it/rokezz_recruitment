@@ -1,0 +1,64 @@
+@use '../../../../../styles' as styles;
+
+:host {
+  display: block;
+  box-sizing: border-box;
+}
+
+.input,
+.textarea {
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
+  background-color: hsla(0, 0%, 100%, 0.1);
+  border: 1px solid hsla(0, 0%, 100%, 0.1);
+  border-radius: 8px;
+  color: styles.$text-color;
+  font-family: styles.$font-family;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+
+  &:focus {
+    outline: none;
+    border-color: styles.$accent-main-color;
+  }
+
+  &::placeholder {
+    color: styles.$text-color-disabled;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
+}
+
+.textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.error {
+  color: styles.$accent-main-color;
+  border-color: styles.$error-color;
+
+  &:focus {
+    border-color: styles.$error-color;
+  }
+
+  &::placeholder {
+    color: styles.$error-color;
+  }
+}
+.label {
+  color: styles.$text-color;
+  font-size: 0.875rem;
+  margin-bottom: 0.25rem;
+}
+
+.input-wrapper {
+  display: flex;
+}
+
+.error-message {
+  color: styles.$error-color;
+}

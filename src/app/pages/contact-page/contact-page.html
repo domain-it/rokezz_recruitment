@@ -1,0 +1,27 @@
+<app-section class="contact ">
+  <div left class="contact-content">
+    <h2 class="x-bold">Napisz do mnie!</h2>
+    <p>Skontaktuj się ze mną, żeby zacząć drogę ku zmianie!
+      Możesz od razu wybrać termin pierwszej konsultacji lub napisać do mnie
+      wiadomość - z chęcią odpowiem na wszelkie pytania i rozwieję wątpliwości.</p>
+    <div class="bottom-row">
+      <app-email-link email="damiansoltys@trening.com"></app-email-link>
+      <div class="button-container">
+        <app-button (click)="navigateTo('/consultation')">Umów konsultację</app-button>
+      </div>
+    </div>
+  </div>
+  <app-contact-form right/>
+</app-section>
+<div class="map page-content">
+  <h2>od kontaktu do pierwszego treningu</h2>
+  <app-card-grid [columns]="3">
+    <app-card variant="list" title="1. Umawiamy się na pierwszą konsultację" subtitle="Spotykamy się na siłowni, by porozmawiać o Twoich oczekowaniach i możliwościach. Mierzymy skład Twojego ciała i ustalamy cele, a także ramy czasowe ich wykonania. Jeżeli potrzebujesz też ułożenia diety, skontaktuję Cię z moim zaufanym dietetykiem." />
+    <app-card variant="list" title="2. Umawiamy się na pierwszy trening" subtitle="3-4 dni po konsultacji i ustaleniu celów umawiamy się na pierwszy trening. Przychodzę do Ciebie z planem treningowym ułożonym na podstawie ustaleń z konsultacji. Zawiera on rozpisane ćwiczenia, ilość powtórzeń i serii oraz opis,
+        w jakie dni tygodnia ćwiczymy jakie partie ciała." />
+    <app-card variant="list" title="3. Trening pokazowy" subtitle="Trening pokazowy to około 2 godziny ćwiczeń pod moim okiem. Pokażę Ci wszystkie ćwiczenia z Twojego planu, opowiem jak robić je poprawnie i sprawdzę, czy jesteś w stanie wszystkie wykonać. W miarę potrzeby skoryguję Twój plan treningowy." />
+    <app-card variant="list" title="5. Dalsza systematyczna praca" subtitle="Po treningu pokazowym kontynuujesz ćwiczenia samodzielnie, a my spotykamy się co miesiąc, by sprawdzić Twoje postępy. Na naszej siłowni jestem zawsze ja lub ktoś z moich kolegów, więc w razie potrzeby służymy pomocą." />
+    <div class="filler"></div>
+    <h2 class="motto"><span class="accent">nie czekaj!</span> zmiana zaczyna się od pierwszego kroku.</h2>
+  </app-card-grid>
+</div>

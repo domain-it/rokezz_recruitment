@@ -1,0 +1,29 @@
+<app-section class="banner">
+  <div left class="banner-content">
+    <h1 class="x-bold">Trener personalny
+      z doświadczeniem</h1>
+    <p>Swoją przygodę ze sportem zacząłem jeszcze w dzieciństwie, uczęszczając na zajęcia karate i kickboxingu. W wieku 16 lat dostałem swój pierwszy karnet na siłownię i od tego momentu poważnie zainteresowałem się tym, jak konkretne ćwiczenia zmieniają ciało. Już wtedy wiedziałem, że chcę zajmować się pomaganiem ludziom w osiąganiu swoich celów i poprawianiu jakości życia.</p>
+    <div  class="button-container">
+      <app-button (click)="navigateTo('/changes')"> Zobacz przemiany moich podopiecznych</app-button>
+    </div>
+  </div>
+  <img right ngSrc="/frame6.png" alt="Banner Image" height="487" width="622">
+</app-section>
+<div class="page-content">
+  <app-image-gallery [columns]="4">
+    <img ngSrc="/frame1.png" alt="Banner Image" height="346" width="365">
+    <img ngSrc="/frame2.png" alt="Banner Image" height="346" width="365">
+    <img ngSrc="/frame3.png" alt="Banner Image" height="346" width="365">
+    <img ngSrc="/frame4.png" alt="Banner Image" height="346" width="365">
+  </app-image-gallery>
+</div>
+<app-section class="marketing-stuff">
+  <img left ngSrc="/frame5.png" alt="Banner Image" height="487" width="622">
+  <div right class="marketing-content">
+    <h2>Indywidualne podejście. Realne efekty.</h2>
+    <p>Stawiam na indywidualne podejście — zamiast gotowych schematów tworzę plany dopasowane do Twoich potrzeb, możliwości i celu, jaki chcesz osiągnąć. Dbam o poprawną technikę, bezpieczeństwo i realne efekty, dzięki czemu każdy trening staje się krokiem do lepszego samopoczucia i sprawniejszego ciała. Jeśli chcesz zacząć mądrze trenować, odzyskać formę lub w końcu zobaczyć długo wyczekiwane zmiany — umów się na konsultację i zacznijmy działać razem.</p>
+    <div class="button-container">
+      <app-button (click)="navigateTo('/consultation')">Umów się na konsultację</app-button>
+    </div>
+  </div>
+</app-section>

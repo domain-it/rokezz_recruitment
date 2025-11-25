@@ -1,0 +1,35 @@
+<label [for]="id" class="label">
+  <span class="label-text">{{ label() }}</span>
+</label>
+@if (!multiline()) {
+<input
+  [id]="id"
+  [type]="type()"
+  [placeholder]="placeholder()"
+  class="input input-bordered"
+  [formControl]="control()"
+  (input)="onInputChange($event)"
+  (blur)="onBlur()"
+/>
+} @else {
+<textarea
+  [id]="id"
+  [placeholder]="placeholder()"
+  class="textarea textarea-bordered"
+  [formControl]="control()"
+  (input)="onInputChange($event)"
+  (blur)="onBlur()"
+></textarea>
+} @if (control().touched && control().errors) {
+<div class="error">
+  @if (control().hasError('required')) {
+  <p>To pole jest wymagane.</p>
+  } @if (control().hasError('email')) {
+  <p>Podaj prawidłowy adres e-mail.</p>
+  } @if (control().hasError('minlength')) {
+  <p>
+    Musi mieć co najmniej {{ control().getError("minlength").requiredLength }} znaków.
+  </p>
+  }
+</div>
+}

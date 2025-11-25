@@ -1,0 +1,36 @@
+@use '../../../styles' as styles;
+
+.contact {
+  h2 {
+    margin-top: 0;
+  }
+
+  .bottom-row {
+    margin-top: 2rem;
+  }
+}
+
+.image-box {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid hsla(0, 100%, 100%, 0.1);
+  border-radius: 8px;
+}
+.content {
+  max-width: 39rem;
+
+  .title {
+    margin: 0;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    text-transform: uppercase;
+  }
+
+  .buttons {
+    display: flex;
+    margin-top: 2rem;
+    gap: 2rem;
+  }
+}

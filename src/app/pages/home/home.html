@@ -1,0 +1,35 @@
+<app-banner/>
+<div class="page-content">
+  <app-achivments/>
+</div>
+<app-section class="offer-description section">
+  <div left class="image-box">
+    <img class="profile-image" ngSrc="/trener-front.png" alt="Profile image of the trainer" priority width="697"
+         height="518">
+  </div>
+  <div right class="content">
+    <h2 class="x-bold">Skutecznie pomagam osiągać cele</h2>
+    <p>Niezależnie od Twojego celu - poprawa kondycji, zbudowanie formy, zrzucenie zbędnych kilogramów - otrzymasz ode
+      mnie kompleksową opiekę w zakresie treningów. Od lat pomagam ludziom i dbam o to, by osiągali swoje cele w sposób
+      bezpieczny i trwały.</p>
+    <div class="button-container">
+      <app-button (click)="navigateTo('/about-me')">Więcej o mnie</app-button>
+      <app-button (click)="navigateTo('/changes')" variant="secondary"> Zobacz ludzi, którzy już osiągneli swoje cele</app-button>
+    </div>
+  </div>
+</app-section>
+<app-section class="contact ">
+  <div left class="contact-content">
+    <h2 class="x-bold">Napisz do mnie!</h2>
+    <p>Skontaktuj się ze mną, żeby zacząć drogę ku zmianie!
+      Możesz od razu wybrać termin pierwszej konsultacji lub napisać do mnie
+      wiadomość - z chęcią odpowiem na wszelkie pytania i rozwieję wątpliwości.</p>
+    <div class="bottom-row">
+      <app-email-link email="damiansoltys@trening.com"></app-email-link>
+      <div class="button-container">
+        <app-button (click)="navigateTo('/consultation')">Umów konsultację</app-button>
+      </div>
+    </div>
+  </div>
+  <app-contact-form right/>
+</app-section>

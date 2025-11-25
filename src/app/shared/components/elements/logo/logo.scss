@@ -1,0 +1,16 @@
+@use '../../../../../styles' as styles;
+
+:host {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  line-height: 1.6rem;
+  position: relative;
+  cursor: pointer;
+
+  .name {
+    font-size: 250%;
+  }
+
+
+}

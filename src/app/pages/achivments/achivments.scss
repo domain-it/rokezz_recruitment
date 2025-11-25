@@ -1,0 +1,23 @@
+@use '../../../styles' as styles;
+
+.personal-achivments {
+  padding-block: 5.25rem;
+
+  .achivment-content {
+    max-width: 630px;
+
+    p {
+      margin-block: 2rem;
+    }
+  }
+}
+
+.page-content {
+  margin-bottom: 5rem;
+}
+
+.changes {
+  p {
+    margin-block: 2rem;
+  }
+}

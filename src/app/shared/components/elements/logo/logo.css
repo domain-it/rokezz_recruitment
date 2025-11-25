@@ -1,0 +1,32 @@
+@import "https://fonts.googleapis.com/css2?family=Figtree&display=swap";
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font: 16px "Figtree", sans-serif;
+  background-color: hsl(222, 65%, 5%);
+  color: hsl(222, 65%, 95%);
+}
+
+.text-l {
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+:host {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  line-height: 1.6rem;
+}
+:host .name {
+  font-size: 250%;
+}
+
+/*# sourceMappingURL=logo.css.map */

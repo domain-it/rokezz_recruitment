@@ -1,0 +1,84 @@
+@use '../../../../../styles' as styles;
+
+:host {
+  width: min-content;
+}
+
+.button-container {
+  position: relative;
+  display: inline-block;
+}
+
+button {
+  display: flex; /* Make button a flex container */
+  align-items: center; /* Vertically align items */
+  justify-content: center; /* Horizontally center items */
+  gap: 0.5em; /* Add some space between icon and text */
+  font-weight: bold;
+  border-radius: 8px;
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
+  border: 1px solid hsla(0, 100%, 100%, 5%);
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+  white-space: nowrap;
+
+  &:hover {
+    background-color: styles.$accent-secondrary-color;
+  }
+
+  app-icon { /* Target app-icon inside the button */
+    width: 1em;
+    height: 1em;
+  }
+}
+
+.default {
+  background-color: styles.$accent-main-color;
+  color: styles.$text-color;
+}
+
+.secondary {
+  background-color: styles.$accent-tertiary-color;
+  color: styles.$text-color;
+}
+
+.icon {
+  background-color: transparent;
+  border: 0;
+  color: styles.$text-color;
+  border-radius: 1000rem;
+  padding: 1em;
+  margin: 1em;
+}
+
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.active {
+  border-color: styles.$accent-main-color;
+  background-color: hsla(0, 100%, 100%, 5%) !important;
+  color: styles.$accent-main-color;
+}
+
+.active:hover {
+  background-color: styles.$accent-tertiary-color;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: styles.$accent-tertiary-color;
+  color: styles.$text-color;
+  padding: 0.5rem;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  white-space: nowrap;
+  z-index: 10;
+  backdrop-filter: blur(10px);
+  border: 1px solid hsla(0, 100%, 100%, 5%);
+}

@@ -1,0 +1,28 @@
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+  <div class="contact-info">
+    <app-text-input
+      placeholder="Imię*"
+      formControlName="name"
+      [control]="name"
+    ></app-text-input>
+    <app-text-input
+      placeholder="E-Mail*"
+      formControlName="email"
+      [control]="email"
+    ></app-text-input>
+  </div>
+  <app-text-input
+    [multiline]="true"
+    placeholder="Wiadomość*"
+    formControlName="message"
+    [control]="message"
+  ></app-text-input>
+  <app-button
+    type="submit"
+    [disabled]="contactForm.invalid"
+    tooltip="Wszystkie wymagane pola muszą być wypełnione"
+  >
+    <app-icon name="mail" size="1em"></app-icon>
+    Wyślij
+  </app-button>
+</form>

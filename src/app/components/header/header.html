@@ -1,0 +1,10 @@
+<app-logo></app-logo>
+<app-button class="menu-button" variant="icon" (click)="toggleMenu()"><app-icon name="menu"/></app-button>
+<nav class="nav" [class.show]="menuOpen()">
+  <app-button variant="secondary" [active]="isActive('/about-me')" (click)="navigateTo('/about-me')">O mnie</app-button>
+  <app-button variant="secondary" [active]="isActive('/achivments')" (click)="navigateTo('/achivments')">Osiągnięcia</app-button>
+  <app-button variant="secondary" [active]="isActive('/changes')" (click)="navigateTo('/changes')">Przemiany</app-button>
+  <app-button variant="secondary" [active]="isActive('/gallery')" (click)="navigateTo('/gallery')">Galeria</app-button>
+  <app-button variant="secondary" [active]="isActive('/contact-page')" (click)="navigateTo('/contact-page')">Kontakt</app-button>
+  <app-button [active]="isActive('/consultation')" (click)="navigateTo('/consultation')">Umów konsultację</app-button>
+</nav>
